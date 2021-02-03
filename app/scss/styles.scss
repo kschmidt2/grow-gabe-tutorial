@@ -22,7 +22,7 @@ $breakpoint-lg: 717px;
 
 @import "colors";
 
-.chart-area-PROJECT-NAME { // add the proper class here
+.chart-area-gabe-tutorial { // add the proper class here
 
   // type styles
 
@@ -45,7 +45,7 @@ $breakpoint-lg: 717px;
       margin-bottom: 10px;
       @include sm-md-xl {
           // set this only if there is a chart title + legend
-          margin-bottom: -33px;
+          // margin-bottom: -33px;
       }
   }
 
@@ -140,7 +140,7 @@ $breakpoint-lg: 717px;
     margin-top: -10px;
     @include x-small {
       // set this only if there is no chart note (otherwise the leaves run into the chart on mobile)
-      // margin-bottom: 30px;
+      margin-bottom: 30px;
     }
   }
 
@@ -149,26 +149,26 @@ $breakpoint-lg: 717px;
     margin-top: 20px;
   }
 
-  .highcharts-yaxis-labels {
-    // use this to change the axis label
-    & span:first-child {
-      // transform: translate (10px,0) !important;
-      &:after {
-        content: "%";
-    }
-    }
-  }
+  // .highcharts-yaxis-labels {
+  //   // use this to change the axis label
+  //   & span:last-child {
+  //     // transform: translate(-5px,0) !important;
+  //     &:before {
+  //       content: "$";
+  //   }
+  //   }
+  // }
 
   //  set this if the x-axis is not 0
-  // .highcharts-axis-line {
-  //   stroke-width: 0;
-  // }
+  .highcharts-axis-line {
+    stroke-width: 0;
+  }
 
   // if 0 is in the middle of the chart, set its gridline to black
   // the nth-child number represents the grid line to be changed
   // IMPORTANT: if you set this, you MUST set the yAxis min, max and tickAmount in the JS
   // .highcharts-grid-line {
-  //   &:nth-child(3) {
+  //   &:nth-child(4) {
   //     stroke: black;
   //   }
   // }
